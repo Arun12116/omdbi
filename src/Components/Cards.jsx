@@ -18,8 +18,8 @@ const Cards = () => {
 
                 <Flex flexWrap={"wrap"} justifyContent={"space-around"}>
                     {
-                        moviesData.map((items) => {
-                            return <Card maxW='sm'>
+                        moviesData.map((items,index) => {
+                            return <Card maxW='sm' key={index}>
                                 <CardBody>
                                     <Image
                                         src={items.Poster}
